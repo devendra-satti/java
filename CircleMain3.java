@@ -14,7 +14,7 @@ class CircleArea3
 		x=a;
 		y=b;
 		r=c;
-	}
+	} 
 	
 }
 class CircleMain3
