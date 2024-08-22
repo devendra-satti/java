@@ -10,13 +10,13 @@ public class MethodDemo
 	}
 	public static void main(String args[])
 	{
-		int x,y,z;
+		int a,b,c;
 		Scanner sc=new Scanner(System.in);
 		MethodDemo md= new MethodDemo();	
 		System.out.print("Enter two integers for addition : ");
-		x=sc.nextInt();
-		y=sc.nextInt();
-		z=md.add(x,y);			
-		System.out.println("Sum of "+x+" and "+y+" is "+z);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=md.add(a,b);			
+		System.out.println("Sum of "+a+" and "+b+" is "+c);
 	}
 }
