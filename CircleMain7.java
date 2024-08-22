@@ -1,18 +1,18 @@
 //COPY CONSTRUCTOR DEMO
 import java.io.*;
 import java.util.*;
-class CircleArea6
+class CircleArea7
 {
     double r;
-    CircleArea6()
+    CircleArea7()
     {
         r=0;
     }
-    CircleArea6(double r)
+    CircleArea7(double r)
     {
         this.r=r;
     }
-    CircleArea6(CircleArea6 c)
+    CircleArea7(CircleArea7 c)
     {
         this.r=c.r;
     }
@@ -30,13 +30,13 @@ class CircleArea6
     }
 }
 
-class CircleMain6
+class CircleMain7
 {
 	public static void main(String[] args) 
 	{
-		CircleArea6 c1 = new CircleArea6();
-		CircleArea6 c2 = new CircleArea6(5.5);
-		CircleArea6 c3 = new CircleArea6(c2);
+		CircleArea7 c1 = new CircleArea7();
+		CircleArea7 c2 = new CircleArea7(5.5);
+		CircleArea7 c3 = new CircleArea7(c2);
 		Scanner sc = new Scanner (System.in);
 		System.out.println("Area of first circle is "+c1.area());
 		System.out.println("Area of Second circle with radius 5.5  is "+c2.area());
