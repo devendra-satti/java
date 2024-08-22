@@ -1,4 +1,5 @@
 //COPY CONSTRUCTOR DEMO
+//To find area of circle
 import java.io.*;
 import java.util.*;
 class CircleArea7
@@ -22,7 +23,7 @@ class CircleArea7
     }
     double area(double x)
     {
-        return (22/7.0)*r*r;
+        return (22/7.0)*x*x;
     }
     void setCircle(double r)
     {
@@ -34,18 +35,18 @@ class CircleMain7
 {
 	public static void main(String[] args) 
 	{
-		CircleArea7 c1 = new CircleArea7();
-		CircleArea7 c2 = new CircleArea7(5.5);
-		CircleArea7 c3 = new CircleArea7(c2);
 		Scanner sc = new Scanner (System.in);
-		System.out.println("Area of first circle is "+c1.area());
-		System.out.println("Area of Second circle with radius 5.5  is "+c2.area());
-		System.out.println("Area of third circle with copy constructor of c2 is "+c3.area());
+		CircleArea7 c1 = new CircleArea7();
+		System.out.println("Initially,area of circle -1 : "+c1.area());
+		CircleArea7 c2 = new CircleArea7(7.0);
+		System.out.println("Area of circle-2 with radius 7.0 : "+c2.area());
+		System.out.println("Area of circle-2 with radius 5.5 :  "+c2.area(5.5));
+		CircleArea7 c3 = new CircleArea7(c2);
+		System.out.println("After copy constructor(c2),Area of circle -3 : "+c3.area());
 		System.out.print("Enter radius of Circle to find area : ");
 		double radius = sc.nextDouble();
 		c1.setCircle(radius);
-		System.out.println("Area of circle is "+c3.area(radius));
-		System.out.println("Area of circle is "+c1.area());
+		System.out.println("Area of circle-1 : "+c1.area());
 		
 	}
 }
