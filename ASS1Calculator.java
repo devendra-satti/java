@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-class Calculator 
+class ASS1Calculator
 {
         public static void main(String args[])
   	{
