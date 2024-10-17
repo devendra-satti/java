@@ -11,7 +11,7 @@ public class PackageExample
 		System.out.println("Subtraction : "+result);
 		result = calculator.multiply(5,3);
 		System.out.println("Multiplication	 : "+result);
-		result = calculator.add(5,3);
+		result = calculator.divide(10,2);
 		System.out.println("Division	: "+result);
 	}
 }
